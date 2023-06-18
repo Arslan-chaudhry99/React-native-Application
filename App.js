@@ -7,6 +7,8 @@ import Setting from "./src/screens/Settings/Setting";
 import Account from "./src/screens/Account/Account";
 import Notification from "./src/screens/Notification/Notification";
 import Language from "./src/screens/Language/Language";
+import ChangePassword from "./src/screens/ChangePassword/ChangePassword";
+import Cards from "./src/screens/Cards/Cards";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
@@ -22,6 +24,8 @@ const App = () => {
           <Stack.Screen name="Notification" component={Notification} />
           <Stack.Screen name="Account Setting" component={Account} />
           <Stack.Screen name="Select Language" component={Language} />
+          <Stack.Screen name="Change Password" component={ChangePassword} />
+          <Stack.Screen name="Manage Cards" component={Cards} />
         </Stack.Navigator>
         <Footer/>
       </NavigationContainer>

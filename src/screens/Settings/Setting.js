@@ -33,19 +33,19 @@ const Setting = () => {
             <Text style={styles.textValues}>Dark Mode</Text>
             <Switch />
           </View>
-          <View style={styles.textUi}>
-            <TouchableOpacity
+          <TouchableOpacity style={styles.textUi}  onPress={() => navigateToScreen("Account Setting")}>
+            <View
               style={styles.TwoItemContain}
-              onPress={() => navigateToScreen("Account Setting")}
+             
             >
               <Image source={profile} style={styles.textUiIcons} />
               <Text style={styles.textUiParagraph}>Account</Text>
-            </TouchableOpacity>
+            </View>
             <View>
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
-          </View>
-          <View style={styles.textUi}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.textUi}  onPress={() => navigateToScreen("Change Password")}>
             <View style={styles.TwoItemContain}>
               <Image source={security} style={styles.textUiIcons} />
               <Text style={styles.textUiParagraph}>Security & Password</Text>
@@ -53,8 +53,8 @@ const Setting = () => {
             <View>
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
-          </View>
-          <View style={styles.textUi}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.textUi} onPress={() => navigateToScreen("Manage Cards")}>
             <View style={styles.TwoItemContain}>
               <Image source={bankCard} style={styles.textUiIcons} />
               <Text style={styles.textUiParagraph}>Manage Card</Text>
@@ -62,7 +62,7 @@ const Setting = () => {
             <View>
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
-          </View>
+          </TouchableOpacity>
           <View style={styles.textUi}>
             <View style={styles.TwoItemContain}>
               <Image source={help} style={styles.textUiIcons} />

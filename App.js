@@ -9,6 +9,8 @@ import Notification from "./src/screens/Notification/Notification";
 import Language from "./src/screens/Language/Language";
 import ChangePassword from "./src/screens/ChangePassword/ChangePassword";
 import Cards from "./src/screens/Cards/Cards";
+import Help from "./src/screens/HelpSupport/Help"
+import About from "./src/screens/AboutUs/About"
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
@@ -26,6 +28,8 @@ const App = () => {
           <Stack.Screen name="Select Language" component={Language} />
           <Stack.Screen name="Change Password" component={ChangePassword} />
           <Stack.Screen name="Manage Cards" component={Cards} />
+          <Stack.Screen name="Help and Support" component={Help} />
+          <Stack.Screen name="About" component={About} />
         </Stack.Navigator>
         <Footer/>
       </NavigationContainer>

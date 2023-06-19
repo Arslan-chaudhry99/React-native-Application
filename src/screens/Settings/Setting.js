@@ -63,7 +63,7 @@ const Setting = () => {
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
           </TouchableOpacity>
-          <View style={styles.textUi}>
+          <TouchableOpacity style={styles.textUi} onPress={() => navigateToScreen("Help and Support")}>
             <View style={styles.TwoItemContain}>
               <Image source={help} style={styles.textUiIcons} />
               <Text style={styles.textUiParagraph}>Help and Support</Text>
@@ -71,8 +71,9 @@ const Setting = () => {
             <View>
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
-          </View>
-          <View style={styles.textUi}>
+          </TouchableOpacity>
+          
+          <TouchableOpacity style={styles.textUi} onPress={() => navigateToScreen("About")}>
             <View style={styles.TwoItemContain}>
               <Image source={about} style={styles.textUiIcons} />
               <Text style={styles.textUiParagraph}>About</Text>
@@ -80,7 +81,7 @@ const Setting = () => {
             <View>
               <Image source={openNext} style={styles.openNextIcon} />
             </View>
-          </View>
+          </TouchableOpacity>
           <View style={styles.textUilogout}>
             <View style={styles.TwoItemContain}>
               <Text style={styles.textUiParagraphLogout}>Logout</Text>

@@ -31,7 +31,7 @@ const Setting = () => {
         <View style={styles.container}>
           <View style={styles.settingsContainer}>
             <Text style={styles.textValues}>Dark Mode</Text>
-            <Switch />
+            <Switch value={true} />
           </View>
           <TouchableOpacity style={styles.textUi}  onPress={() => navigateToScreen("Account Setting")}>
             <View

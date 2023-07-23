@@ -14,8 +14,7 @@ const Home = () => {
   return (
     <>
      <View style={styles.overlay}>
-        <Text style={styles.title}>Welcome to the Home Page</Text>
-        <Text style={styles.subtitle}>This is a basic home page in React Native</Text>
+      
       </View>
     </>
   );

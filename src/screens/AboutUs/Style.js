@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: "center",
     backgroundColor: "#f2f2f2",
+    height:"100%"
   },
   logo: {
     width: 100,
@@ -33,13 +34,13 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 14,
-    marginBottom: 20,
+    marginBottom: 5,
     textAlign: "center",
   },
   signature: {
     fontSize: 14,
     fontWeight: "bold",
-    marginTop: 40,
+    marginTop: 10,
     textAlign: "center",
   },
 });

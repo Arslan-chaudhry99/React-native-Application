@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   textContainer: {
     display: "flex",
     flexDirection: "column",
+    width:"80%"
   },
   notificationiconSize: {
     width: 35,

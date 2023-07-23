@@ -8,42 +8,39 @@ import {
   Button,
   FlatList,
   Switch,
+  SafeAreaView
 } from "react-native";
 
 import styles from "./style";
-import profile from "../../IMG/profile.png";
-import openNext from "../../IMG/open-next.png";
-import notification from "../../IMG/notification.png";
-import language from "../../IMG/language.png";
+
+import tickImage from "../../IMG/greenTick.png";
 const Language = () => {
+  let languageArry = ["English", "اردو", "हिंदी"]
   return (
     <>
-      <ScrollView>
-        <View style={styles.textUi}>
-          <View style={styles.TwoItemContain}>
-            <Text style={styles.textUiParagraph}>English</Text>
-          </View>
-          <View>
-            <Text></Text>
-          </View>
-        </View>
-        <View style={styles.textUi}>
-          <View style={styles.TwoItemContain}>
-            <Text style={styles.textUiParagraph}>اردو</Text>
-          </View>
-          <View>
-            <Text></Text>
-          </View>
-        </View>
-        <View style={styles.textUi}>
-          <View style={styles.TwoItemContain}>
-            <Text style={styles.textUiParagraph}>हिंदी</Text>
-          </View>
-          <View>
-            <Text></Text>
-          </View>
-        </View>
-      </ScrollView>
+      <SafeAreaView>
+        <ScrollView>
+          {
+            languageArry.map((value, index) => {
+              return <>
+                <View style={styles.textUi}>
+                  <View style={styles.TwoItemContain}>
+                    <Text style={styles.textUiParagraph}>{value}</Text>
+                  </View>
+                  <View>
+                    {
+                      index === 0 ? <Image source={tickImage} style={styles.tickImage} />
+                        : null
+                    }
+                  </View>
+                </View>
+              </>
+            })
+          }
+
+
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 };

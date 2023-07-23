@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    paddingLeft:10
+    paddingLeft: 10
   },
   textUiIcons: {
     width: 30,
@@ -32,5 +32,10 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
   },
+  tickImage: {
+    width: 30,
+    height: 30,
+marginRight:14
+  }
 });
 export default styles;

@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
   textValues: {
     fontWeight: "bold",
     fontSize: 20,
+    paddingTop:10,
+    paddingBottom:10,
+    
   },
   textUi: {
     paddingTop: 8,

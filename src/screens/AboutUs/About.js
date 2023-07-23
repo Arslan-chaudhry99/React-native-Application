@@ -16,10 +16,11 @@ import styles from "./Style";
 const About = () => {
   return (
     <>
-      <View style={styles.container}>
-        <ScrollView>
-           <View style={styles.logoContainer}>
-          <Image source={img} style={styles.logo} />
+      <ScrollView>
+        <View style={styles.container}>
+
+          <View style={styles.logoContainer}>
+            <Image source={img} style={styles.logo} />
           </View>
           <Text style={styles.title}>Welcome to Our Company</Text>
           <Text style={styles.subtitle}>
@@ -45,8 +46,9 @@ const About = () => {
             goals.
           </Text>
           <Text style={styles.signature}>- The Team at Our Company</Text>
-        </ScrollView>
-      </View>
+
+        </View>
+      </ScrollView>
     </>
   );
 };
